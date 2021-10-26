@@ -1,9 +1,14 @@
 # ML-prototype
 
 This repo contains prototype version of the neural-network based algorithm to predict the rank of the issues, based on the currently solved issue.
-It's important to know, that system will not work if the repo do not have the closed issues, open issues
 
-## How to run 
+**It's important to know, that system will not work if** 
+1. The repo do not have closed issues
+2. The repo do not have open issues
+3. You don't have access to the repo
+4. Wrong repo url
+
+## How to install
 Before installation be sure that you have installed:
 1. python of version 3.6 or greater https://www.python.org/downloads/
 2. git https://git-scm.com/downloads
@@ -19,9 +24,13 @@ Some important notes:
  cd ML-prototype
  pip install -r requirements.txt
  export G_KEY = '${PAST_HERE_YOUR_ACCESS_TOKEN}'
- python main.py ${REPO_AUTHOR}/${REPO_NAME}
  ```
- Example
+ How to run
+ ```
+  python main.py ${REPO_AUTHOR}/${REPO_NAME}
+ ```
+
+Example
  ```
  python main.py PyGithub/PyGithub
  ```
