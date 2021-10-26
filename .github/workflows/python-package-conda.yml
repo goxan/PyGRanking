@@ -33,4 +33,6 @@ jobs:
     - name: Run the prediction for the goxan/raft repo
       run: |
         python main.py goxan/raft
+      env:
+        G_KEY: ${{secret.SECRET_KEY}}
 
