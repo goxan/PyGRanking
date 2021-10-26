@@ -20,8 +20,9 @@ jobs:
         echo $CONDA/bin >> $GITHUB_PATH
     - name: Install dependencies
       run: |
-        conda env update --file environment.yml --name base
         conda install pytorch
+        conda install nltk
+        pip3 install PyGithub
     - name: Lint with flake8
       run: |
         conda install flake8
@@ -32,4 +33,6 @@ jobs:
     - name: Run the prediction for the goxan/raft repo
       run: |
         python main.py goxan/raft
+      env:
+        G_KEY: ${{secrets.SECRET_KEY}}
 
