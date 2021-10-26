@@ -16,6 +16,10 @@ jobs:
         architecture: 'x64'
     - name: Install dependencies
       run: |
-        pip3 install torch
+        conda create -n mlprot
+        conda init bash
+        source ~/.bash
+        conda activate mlprot
+        conda install pytorch cudatoolkit=10.2 -c pytorch
         pip3 install -r requirements.txt 
         python main.py goxan/raft
