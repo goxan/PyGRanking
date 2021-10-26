@@ -17,7 +17,6 @@ jobs:
     - name: Install dependencies
       run: |
         wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh
-        conda env create --file environment.yml
-        source ~/anaconda3/etc/profile.d/conda.sh
-        conda activate mlprototype
+        conda create -m some
+        conda activate some
         python main.py goxan/raft
