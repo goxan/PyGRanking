@@ -58,6 +58,10 @@ class Predictor:
         self.net = net
         with open(r"word_to_ix.pickle", "rb") as input_file:
             self.word_to_ix = cPickle.load(input_file)
+        try:
+            nltk.data.find('tokenizers/punkt')
+        except LookupError:
+            nltk.download('punkt')
 
     def predict(self, puzzle, issues):
         with torch.no_grad():
