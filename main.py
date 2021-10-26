@@ -4,8 +4,8 @@ import sys
 from model import Predictor, get_text
 
 if __name__ == '__main__':
-    if 'gkey' in os.environ:
-        api_key = os.environ['gkey']
+    if 'G_KEY' in os.environ:
+        api_key = os.environ['G_KEY']
     else:
         print('gkey is not presented in environment variable')
         sys.exit()

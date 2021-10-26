@@ -1,5 +1,3 @@
-torch
-torchvision
+pytorch
 PyGithub
-
-
+nltk
