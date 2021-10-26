@@ -51,7 +51,10 @@ class Predictor:
         embedding_dim = 30
         self.device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
         net = RecommenderNet(vocab_size, embedding_dim).to(self.device)
-        net.load_state_dict(torch.load('model'))
+        if torch.cuda.is_available():
+            net.load_state_dict(torch.load('model'))
+        else:
+            net.load_state_dict(torch.load('model_cpu'))
         self.net = net
         with open(r"word_to_ix.pickle", "rb") as input_file:
             self.word_to_ix = cPickle.load(input_file)
