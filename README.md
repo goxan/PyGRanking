@@ -1,6 +1,7 @@
 # ML-prototype
 
-This repo contains prototype version of the neural-network based algorithm to predict the rank of the issues, based on the currently solved issue.
+This repository contains capabilities for testing the features that will be implemented in future versions of [0pdd](https://github.com/yegor256/0pdd) tool. Those features based on the neural-network based algorithm to to predict the rank of the issues, based on the currently solved issue. For more detailed information about the approach that we use, please refer to our paper [link to the paper]()
+
 
 **It's important to know, that system will not work if** 
 1. The repo do not have closed issues
