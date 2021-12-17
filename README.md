@@ -44,7 +44,8 @@ Create a new project and install the library. Run the following commands one at 
  ```
  
  ```sh
- virtualenv venv && source venv/bin/activate
+ python3 -m venv path_to_venv
+ virtualenv venv && source path_to_venv/bin/activate
  pip3 install -r requirements.txt
  export G_KEY="${PAST_HERE_YOUR_ACCESS_TOKEN}"
  ```
