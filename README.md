@@ -9,7 +9,7 @@ Puzzle driven development is the methodology aimed to maximize the productivity 
 Even though this approach is successfully solving the problem of minimizing the number of [stale branches](https://stackoverflow.com/questions/29112156/what-is-a-stale-git-branch) another problem arise. How to deal with monstrous size backlog? We created PyGRanking as the first step to do this. This repository scan the given repository for the puzzles, which were transformed to issues, and rank them.   
 
 
-# Repository structure
+# Content
 
 - [Environment Requirements](#environment-requirements)
 - [Getting Started](#getting-started)
