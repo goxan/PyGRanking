@@ -1,3 +1,4 @@
 torch
 PyGithub
 nltk
+numpy
