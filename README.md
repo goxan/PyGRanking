@@ -32,7 +32,7 @@ After you're done with the above environment set up, please proceed to dependenc
 
 # Getting Started
 
-> Disclaimer: This library is not tested on Windows. If you are using Windows, then it's recommended to install Linux Subsystem to make it easier to run this project.
+> Disclaimer: This library is not tested on Windows. If you are using Windows, then it's recommended to install Linux Subsystem to make it easier to run this project. Also bash was used so some commands will be different for zsh, fish and some others Unix shells.
 
 ## Installing the project
 
